@@ -58,10 +58,6 @@ export default function HomePage() {
           >
             Browse Videos
           </Button>
-
-          <Typography fontSize={13} color="text.secondary" mt={3}>
-            No account required to start exploring
-          </Typography>
         </Box>
       </Container>
     </Box>

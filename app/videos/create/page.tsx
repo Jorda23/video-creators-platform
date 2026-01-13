@@ -7,10 +7,8 @@ import {
   Container,
   TextField,
   Typography,
-  IconButton,
   Divider,
 } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
 import { Switch } from "@/components";
 
 export default function CreateVideoPage() {
@@ -52,7 +50,11 @@ export default function CreateVideoPage() {
             p: 4,
           }}
         >
-          <Box display="flex" justifyContent="space-between" alignItems="center">
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+          >
             <Box>
               <Typography fontSize={24} fontWeight={600}>
                 Create New Video
@@ -61,10 +63,6 @@ export default function CreateVideoPage() {
                 Share your knowledge with the community
               </Typography>
             </Box>
-
-            <IconButton size="small">
-              <CloseIcon fontSize="small" />
-            </IconButton>
           </Box>
 
           <Divider sx={{ my: 3 }} />
@@ -117,7 +115,6 @@ export default function CreateVideoPage() {
             <Switch
               checked={published}
               onChange={(e) => setPublished(e.target.checked)}
-
             />
           </Box>
 
